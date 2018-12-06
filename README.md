@@ -1,5 +1,6 @@
 # OuiCal2
 
+<<<<<<< HEAD
 A simple JS library that enables you to add an "add to calendar" button for your upcoming events.
 
 ## Inspiration
@@ -26,6 +27,25 @@ The only fields that are mandatory are:
         class: 'my-class',
         
         // You can pass an ID. If you don't, one will be generated for you
+=======
+A simple JS script that enables you to add an "add to calendar" button to your events.
+
+Call 'createAddToCalendarLinks' with your event info, pass in any optional parameters such as a class and/ or id and boom! Insert your add-to-calendar div wherever you'd like.
+
+The only fields that are mandatory are:
+
+  - Start time
+  - End time (or event duration, in minutes)
+  - Event tile
+
+## Example
+
+    var myCalendar = createCalendar({
+      options: {
+        class: 'my-class',
+        
+        // You need to pass an ID. If you don't, one will be generated for you.
+>>>>>>> b5de48d0fc154d884f60f2cdaa1f4ba4ecf813f9
         id: 'my-id'
       },
       data: {
@@ -35,6 +55,7 @@ The only fields that are mandatory are:
         // Event start date
         start: new Date('June 15, 2013 19:00'),
         
+<<<<<<< HEAD
         // Event timezone. Will convert the given time to that zone
         timezone: America/Los_Angeles,          
 
@@ -48,6 +69,14 @@ The only fields that are mandatory are:
         // You can also choose to set 'all day'
         // If this is set, this will override end time, duration and timezone
         // allday:true,
+=======
+        // Event duration (IN MINUTES)
+        duration: 120,
+
+        // You can also choose to set an end time. 
+        // If an end time is set, this will take precedence over duration.
+        end: new Date('June 15, 2013 23:00'),     
+>>>>>>> b5de48d0fc154d884f60f2cdaa1f4ba4ecf813f9
 
         // Event Address
         address: 'The internet',
@@ -57,6 +86,7 @@ The only fields that are mandatory are:
       }
     });
 
+<<<<<<< HEAD
     document.querySelector('#place-where-I-want-this-calendar').appendChild(myCalendar);
 
 ### Method 2
@@ -90,9 +120,18 @@ The only fields that are mandatory are:
 
 ## Calendar Generator
 Need to generate an add-to-calendar widget on the fly? No problem, [go here](http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html).
+=======
+    document.querySelector('#place-where-i-want-this-calendar').appendChild(myCalendar);
+
+[Here is the live example](http://carlsednaoui.github.io/ouical/example.html)
+>>>>>>> b5de48d0fc154d884f60f2cdaa1f4ba4ecf813f9
 
 ## GitHub Project Page
 [Official Project Page](http://carlsednaoui.github.io/ouical/)
 
 ## License
+<<<<<<< HEAD
 [MIT](http://opensource.org/licenses/MIT)
+=======
+[MIT](http://opensource.org/licenses/MIT)
+>>>>>>> b5de48d0fc154d884f60f2cdaa1f4ba4ecf813f9
